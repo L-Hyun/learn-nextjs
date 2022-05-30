@@ -2,13 +2,24 @@ import "../styles/globals.css";
 import "semantic-ui-css/semantic.min.css";
 import Footer from "../components/Footer";
 import Top from "../components/Top";
+import css from "styled-jsx/css";
+
+const style = css`
+	div {
+		width: 1200px;
+		margin: 0 auto;
+	}
+`;
 
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
-			<Top />
-			<Component {...pageProps} />
-			<Footer />
+			<div>
+				<Top />
+				<Component {...pageProps} />
+				<Footer />
+			</div>
+			<style jsx>{style}</style>
 		</>
 	);
 }
