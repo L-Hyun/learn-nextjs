@@ -3,5 +3,12 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-	return <div>index</div>;
+	return (
+		<>
+			<Head>
+				<title>Learn-Next.js</title>
+			</Head>
+			<div>index</div>
+		</>
+	);
 }

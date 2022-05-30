@@ -1,6 +1,7 @@
 import { Header } from "semantic-ui-react";
 import Gnb from "./GNB";
 import css from "styled-jsx/css";
+import Link from "next/link";
 
 const style = css`
 	div {
@@ -20,7 +21,9 @@ export default function Top() {
 	return (
 		<>
 			<div>
-				<img src="/imgs/L-Hyun.png" alt="L-Hyun" />
+				<Link href="/">
+					<img src="/imgs/L-Hyun.png" alt="L-Hyun" />
+				</Link>
 				<Header as="h1">L-Hyun, learn-nextjs</Header>
 			</div>
 			<Gnb />
